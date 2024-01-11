@@ -199,9 +199,6 @@ footer{
         background-size: 100vh ;
         
     }
-    .underline .headline{
-        display: none;
-    }
     
     .underline .col-md-4{
         height: 100vh;
