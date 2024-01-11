@@ -137,7 +137,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem 5rem;
+
 
 }
 #map_link{
@@ -162,8 +162,8 @@ a:hover{
 }
 footer{
     padding: 2rem;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 
@@ -195,14 +195,30 @@ footer{
 
     }
     #details{
+        background-attachment: fixed;
+        background-size: 100vh ;
         
-        background-size: auto ;
-        background-position: 50% 110%;
     }
-    .col-md-4{
+    .headline{
+        display: none;
+    }
+    
+    .underline .col-md-4{
         height: 100vh;
     }
-    .col-md-6{
+    .underline .col-md-6{
         height: 100vh;
     }
+    footer .col-md-4{
+        margin-bottom: 5rem;
+    }
+    .col-md-6 > .box{
+
+        height: calc(100vh );
+        
+     }
+     .col-md-4 > .box{
+         height: calc(100vh  - 4rem);
+         
+     }
 }
