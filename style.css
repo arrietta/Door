@@ -34,8 +34,10 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #000000;
     color: white;
+}
+nav{
+    background-color: black;
 }
 
 a{
@@ -84,15 +86,25 @@ a:hover{
 }
 #details{
 
+    position: relative;
+   
+}
+.background{
+    position: absolute;
     background-image: url('main_door.png');
+    background-position: center;
     background-size: cover;
-    background-position: 50%;
+    height: 100%;
+    width: 100%;
 }
 .headline{
     padding: 1.5rem 2rem;
     border-bottom: #fff solid 2px;
 }
 .row > div[line='true']{
+    border-right: #fff solid 2px;
+}
+.row > div[line='truee']{
     border-right: #fff solid 2px;
 }
 .box{
@@ -148,11 +160,7 @@ a:hover{
     
 
 }
-.end{
-    display: flex;
-    justify-content: space-between;
-    
-}
+
 .lh-2{
     line-height: 2rem;
 }
@@ -162,8 +170,7 @@ a:hover{
 }
 footer{
     padding: 2rem;
-    /* display: flex;
-    justify-content: space-between; */
+    background-color: black;
 }
 
 
@@ -186,6 +193,7 @@ footer{
         justify-content: start;
         text-align: center;
         background-position-y: 0;
+        
     }
     #enter > div{
         font-size: 1.15rem;
@@ -194,10 +202,13 @@ footer{
         width: 100%;
 
     }
-    #details{
-        background-attachment: fixed;
-        background-size: 100vh ;
-        
+    .background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
     }
     
     .underline .col-md-4{
@@ -216,7 +227,7 @@ footer{
         padding: 5rem;
      }
      .col-md-4 > .box{
-         height: calc(100vh  - 4rem);
-         
+        height: calc(100vh  - 4rem);
+        padding-right: 4rem;
      }
 }

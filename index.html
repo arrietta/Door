@@ -60,6 +60,7 @@
                 </div>
             </section>
             <section id="details">
+                <s class="background"></s>
                 <div class="headline container-fluid h2">
                     О Нас:
                 </div>
@@ -86,7 +87,7 @@
                             Замер проемов на вашем объекте. При заказе в нашем магазине  у вас имеется возможность вернуть деньги за данную услугу. 
                         </div>
                         <div class="row text-center under_text">
-                            <div class="col" line="true"><a>1000 ₽</a></div>
+                            <div class="col" line="truee"><a>1000 ₽</a></div>
                             <div class="col" color="blue"><a>Позвонить</a></div>
                         </div>
                         
@@ -97,7 +98,7 @@
                             Для полной информации о цене на ваш заказ уточните у квалифицированного дилера.
                         </div>
                         <div class="row text-center under_text">
-                            <div class="col" line="true"><a>Договорная</a></div>
+                            <div class="col" line="truee"><a>Договорная</a></div>
                             <div class="col" color="blue"><a>Позвонить</a></div>
                         </div>
                          
@@ -108,7 +109,7 @@
                             + 50 ₽/КМ если доставка за пределы МКАД.
                         </div>
                         <div class="row text-center under_text">
-                            <div class="col" line="true"><a>2500 ₽</a></div>
+                            <div class="col" line="truee"><a>2500 ₽</a></div>
                             <div class="col" color="blue"><a>Позвонить</a></div>
                         </div>
                         
@@ -168,6 +169,7 @@
             </section>
         </footer>
         <script>
+            
             document.addEventListener('DOMContentLoaded', function () {
                 const sr = ScrollReveal({
                     origin: 'top',
@@ -180,9 +182,9 @@
                 sr.reveal('#details .headline', { delay: 100 });
 
                 // Анимация для текстовых блоков
-                sr.reveal('#details .col-md-6', { delay: 100 });
+                sr.reveal('#details > div', { delay: 140 });
 
-                sr.reveal('#details .col-md-4', { delay: 100 });
+                // sr.reveal('#details .col-md-4', { delay: 100 });
 
                 sr.reveal('#map', { delay: 100 });
                 
