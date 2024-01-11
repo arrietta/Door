@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: black;">
     
         <header>
             <Header class="underline">
@@ -178,23 +178,16 @@
                     reset: true
                 });
 
-                // Анимация для заголовков в секции
                 sr.reveal('#details .headline', { delay: 100 });
 
-                // Анимация для текстовых блоков
-                sr.reveal('#details div', { delay: 140 });
-
-                // sr.reveal('#details .col-md-4', { delay: 100 });
+                sr.reveal('#details div', { delay: 140 });                
 
                 sr.reveal('#map', { delay: 100 });
                 
                 sr.reveal('#welcome', { delay: 100 });
                 
 
-                // Анимация для ссылок
                 
-
-                // Дополнительные анимации для других элементов по необходимости
             });
         </script>
        
